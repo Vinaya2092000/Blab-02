@@ -8,5 +8,9 @@ namespace BasicProgramA
 {
     internal class PrimeFactors
     {
+        public void Prime()
+        {
+
+        }
     }
 }
