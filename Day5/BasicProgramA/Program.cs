@@ -10,9 +10,13 @@
             Console.WriteLine("4 for Power2");
             Console.WriteLine("5 for Prime Factor");
 
-            int Prog = Convert.ToInt32(Console.ReadLine()); 
+            int Prog = Convert.ToInt32(Console.ReadLine());
+            NewMethod(Prog);
+        }
 
-            switch(Prog)
+        private static void NewMethod(int Prog)
+        {
+            switch (Prog)
             {
                 case 1:
                     Flipcoin flipcoin = new Flipcoin();
@@ -21,7 +25,7 @@
 
                 case 2:
                     HarmonicNumber har = new HarmonicNumber();
-                    har.Harmonic();
+                    har.Harmonic(sum);
                     break;
 
                 case 3:
@@ -35,8 +39,8 @@
                     break;
 
                 case 5:
-                    PrimeFactors prime = new PrimeFactors();
-                    prime.Prime();
+                    PrimeFactors pri = new PrimeFactors();
+                    pri.Facto();
                     break;
             }
         }

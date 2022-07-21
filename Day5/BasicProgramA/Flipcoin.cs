@@ -14,7 +14,7 @@ namespace BasicProgramA
             int Head = 0;
             int Tail = 0;
 
-            Console.Write("Enter the number of flips: ");
+            Console.WriteLine("Enter the number of flips: ");
             int number_of_flips =  Convert.ToInt32(Console.ReadLine());
 
             while (number_of_flips<=0)

@@ -10,14 +10,18 @@ namespace BasicProgramA
     {
         public void Harmonic()
         {
+            int i, n;
+            double sum = 0.0;           
 
-            Console.WriteLine("Enter value of the N for the Nth Harmonic: ");
-            int N = Convert.ToInt32(Console.ReadLine());
-            while (N == 0)
+            Console.WriteLine("Enter the number of terms : ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            for (i = 1; i <= n; i++)
             {
-                Console.WriteLine();
+                Console.WriteLine("1/{0} + ", i);
+                sum += 1 / (float)i;
             }
-
+            Console.WriteLine("\nSum of Series upto {0} terms : {1} \n", n, sum);
         }
     }
 }
